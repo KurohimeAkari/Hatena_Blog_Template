@@ -1,0 +1,513 @@
+/*-----------------------------------------------------------
+// (C) Kurohime Akari
+// Website: http://shioneko.sakura.ne.jp
+// はてなブログ用 Blog Templates . Varsion 1.2
+//
+// Comments: 普通にブログを開設した時くらいのテンプレートを制作した。	
+------------------------------------------------------------*/
+
+
+/* -----------------------------------------------------------
+// Blogのメイン要素
+------------------------------------------------------------*/
+
+@charset "utf-8";
+body {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+html {
+    line-height: 1.6;
+    font-family: 'Source Sans Pro',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    color: #666;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin-left:-45px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #7BB7DB;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #B1EDFF;
+}
+
+/* -----------------------------------------------------------
+// Title要素
+------------------------------------------------------------*/
+/* 全体中央揃え */
+[id="blog-title-inner"],
+[id="navi-inner"],
+[id="content-inner"],
+[id="footer-inner"],
+.breadcrumb {
+    margin: 0 auto;
+}
+
+[id="container"] {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+[id="blog-title-inner"] {
+    text-align: center;
+}
+
+[id="title"] {
+    margin: 20px 10px;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "ヒラギノ角ゴ Pro W6","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+}
+
+[id="title"] a,
+.entry-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* -----------------------------------------------------------
+// ブログタイトル下の注訳
+------------------------------------------------------------*/
+
+[id="blog-description"] {
+    font-size: 14px;
+    margin: 0 10px 30px;
+    line-height: 1.4;
+}
+
+/* -----------------------------------------------------------
+// Contents
+------------------------------------------------------------*/
+
+[id="content"],
+[id="footer"],
+[id="top-box"] {
+	margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#box2{
+    background: #fff;
+    border-radius: 5px;
+    margin: 0px 5px 8px;
+}
+
+
+
+[id="main"] {
+    float: left;
+    width:70%;
+    min-width: 400px;
+}
+
+[id="box2"] {
+    float: left;
+    width:288px;
+    border:1px solid #eee;
+}
+
+[id="box2-inner"]{
+	margin: 0px 10px;
+}
+
+/*レスポンシブ*/
+@media (max-width: 1000px){
+	[id="main"]{
+		width:100%;
+		min-width: 630px;
+	}
+
+	[id="main-inner"]{
+		margin: 0px 10px;
+	}
+
+	[id="box2"]{
+		width: 97.2%;
+		min-width: 610px;
+		margin: 0px 10px 10px !important;
+	}
+
+	[id="box2-inner"]{
+		margin: 0px;
+		padding: 5px;
+		display: inline-block;
+		width: 99%;
+	}
+}
+
+/* -----------------------------------------------------------
+// prev and next
+------------------------------------------------------------*/
+.pager-next,.pager-prev {
+	background: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+	border: #ddd solid 1px;
+	border-radius: 4px;
+	margin: -5px 0px 22px 0px;
+}
+
+.pager-next:hover,.pager-prev:hover {
+	background: #ddd;
+}
+.pager-next:after{
+	content: "▶";
+}
+.pager-prev:before{
+	content: "◀";
+}
+.pager-next a,.pager-prev a{
+	color :inherit;
+}
+
+.pager-arrow{
+	display: none;
+}
+
+.permalink > .pager-next {
+	float: right;
+}
+/* -----------------------------------------------------------
+// footer
+------------------------------------------------------------*/
+
+[id="footer"] {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 85%;
+    line-height: 1.5;
+}
+
+/* -----------------------------------------------------------
+// entry要素
+------------------------------------------------------------*/
+
+.entry,
+.archive-entry {
+    margin-bottom: 30px;
+    padding: 40px 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 27px;
+    color: inherit;
+    background-color: #fff;
+    border:1px solid #eee;
+}
+
+.entry-header {
+    position: relative;
+}
+
+.entry-header .hyphen {
+    display: none;
+}
+
+.entry-content{
+	font-size:14px;
+}
+
+.entry-content p{
+	margin:5px !important;
+}
+/* -----------------------------------------------------------
+// entry要素 h2 ~ h5
+------------------------------------------------------------*/
+
+.entry-content h3{
+	border-bottom: 2px solid #ccc !important;
+}
+
+.entry-content h2,.entry-content h3,
+.entry-content h4,.entry-content h5{
+	margin-top: 15px !important;
+	margin-bottom: 0px !important;
+	padding:0px !important;
+}
+
+h4:before{
+	content: "　";
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 10px 3px 0px;
+	background-color: #666;
+	width: 10px;
+	height: 10px;
+}
+
+/* -----------------------------------------------------------
+>> time
+------------------------------------------------------------*/
+
+time{
+	color: #666;
+	font-size: 14px;
+}
+
+.date-year:after,.date-month:after {
+    content: "-";
+}
+
+
+.archive-entry .date a {
+    color: #bbb;
+    line-height: 20px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* 編集　のアレ */
+.entry-header-menu {
+    position: absolute;
+    top: -20px;
+    left: -109px;
+}
+
+.entry-header-menu a {
+    display: inline-block;
+    padding: 2px 10px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #666;
+    text-align: center;
+}
+
+.entry-header-menu a:hover {
+    background-color: #333;
+}
+
+/* タグのカテゴリー */
+.categories {
+    margin-bottom: 30px;
+    font-size: 14px;
+    background: #eee;
+}
+
+.categories a ,.hatena-module-category .hatena-urllist li a{
+    display: inline-block;
+    padding: 2px 10px;
+    border:solid 1px #666;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.categories a:before {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.categories a:hover,
+.hatena-module-category .hatena-urllist li a:hover {
+	color :#666;
+	background: #ccc;
+}
+
+/* -----------------------------------------------------------
+// 右のタブ ( module )
+------------------------------------------------------------*/
+
+.hatena-module {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.hatena-urllist > li{
+	vertical-align: middle;
+	padding: 5px 0px ;
+	border-top: 1px dotted #ddd;
+}
+
+.hatena-urllist > li:last-child{
+	border-bottom: 1px dotted #ddd;
+}
+/* タグのカテゴリー */
+.hatena-module-category > .hatena-module-body > .hatena-urllist li {
+	border:0px;
+	padding: 0px;
+}
+
+.hatena-module-category > .hatena-module-body > .hatena-urllist li a{
+	margin: 5px;
+	display: inline-block;
+	float: left;
+}
+
+/*記事のタイトル*/
+.entry-title,
+.hatena-module-title,
+.page-archive #main-inner>h2,
+.page-archive .search-result>h2,
+.entry-content h1 {
+    margin: 10px 0 20px;
+    font-family: "ヒラギノ角ゴ Pro W6","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.hatena-module-body,
+.hatena-module-title {
+    margin: 0 5px;
+    font-size: 14px;
+}
+.hatena-module-title:before {
+	content: " > "
+}
+
+.hatena-module-title a{
+	color: inherit;
+}
+
+/* -----------------------------------------------------------
+// comments 要素
+------------------------------------------------------------*/
+
+.leave-comment-title{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	border:1px solid #ddd;
+}
+
+.leave-comment-title:hover{
+	background: #ddd;
+	color:inherit;
+}
+
+.comment > .entry-comment {
+	border-top: 1px dotted #ddd;
+	vertical-align: -3px;
+}
+
+.comment > .entry-comment:last-child {
+	border-bottom: 1px dotted #ddd;
+}
+
+.comment > .entry-comment > .comment-user-name{
+	background: #eee;
+}
+
+.comment > .entry-comment > .comment-user-name > .hatena-id-icon{
+	vertical-align: -3px;
+}
+
+
+/* -----------------------------------------------------------
+// image size
+------------------------------------------------------------*/
+
+img.magnifiable{
+	max-width: 560px !important;
+	width: 100%;
+}
+
+p > img {
+	text-align: center;
+	margin: 2px 4.2px !important;
+}
+
+
+/* -----------------------------------------------------------
+// amazon
+------------------------------------------------------------*/
+
+div.hatena-asin-detail-foot{
+	display: none;
+}
+
+/* -----------------------------------------------------------
+// 
+------------------------------------------------------------*/
+
+
+ul.hatena-urllist > li:nth-child(1n+8){
+	display: none;
+}
+
+span.star{
+	width:170px;
+	display: inline-block;
+}
+
+.rssd{
+	text-align: center;
+	padding:3px;
+	border-radius: 5px;
+	width: 80%;
+	margin:5px 10%; /* width / 2 */
+}
+
+.rssd:nth-child(1){
+	background-color: #E67928;
+}
+
+.rssd:nth-child(2){
+	background-color: #6cc655;
+}
+
+.rssd:nth-child(3){
+	background-color: #aaa;
+}
+
+.rssa{
+	display: inline-block;
+	text-decoration: none;
+	color:#fff !important;
+	width: 100%;
+	height:100%;
+
+}
+
+div#banner{
+    text-align:center;
+    margin-top:-20px;
+}
+
+@media (max-width: 1000px){
+	#banner{
+		position: absolute;
+		margin-top: -190px !important;
+		right: 20px;
+	}
+}
+
+/* gist */
+.line {
+    margin: 0px !important;
+}
+
+/*script*/
+script {
+    text-align:center;
+}
