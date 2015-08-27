@@ -424,7 +424,7 @@ time{
 // image size
 ------------------------------------------------------------*/
 
-img.magnifiable{
+img.magnifiable,img.hatena-fotolife{
 	max-width: 560px !important;
 	width: 100%;
 }
