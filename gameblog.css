@@ -441,6 +441,19 @@ p > img {
 	margin: 2px 4.2px !important;
 }
 
+/*レスポンシブ*/
+@media (max-width: 1000px){
+/* CSS3 */
+	p > img.magnifiable,p > img.hatena-fotolife{
+		display: inherit;
+		margin: 0px auto !important;
+	}
+/* CSS4 */
+	?p > img.magnifiable,?p > img.hatena-fotolife{
+		text-align: center;
+	}
+}
+
 
 /* -----------------------------------------------------------
 // amazon
