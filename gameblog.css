@@ -245,7 +245,7 @@ a:focus {
 .entry-content h2,.entry-content h3,
 .entry-content h4,.entry-content h5{
 	margin-top: 15px !important;
-	margin-bottom: 0px !important;
+	margin-bottom: 10px !important;
 	padding:0px !important;
 }
 
