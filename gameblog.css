@@ -426,6 +426,21 @@ time{
 	vertical-align: -3px;
 }
 
+iframe {
+	display: block;
+}
+
+iframe[src*="youtube"] {
+	margin:10px -0px !important;
+}
+
+/* -----------------------------------------------------------
+// 消すのがきわどい奴
+------------------------------------------------------------*/
+/* youtube とか iframeの下についてくるURL */
+.hatena-citation{
+	display: none;
+}
 
 /* -----------------------------------------------------------
 // image size
