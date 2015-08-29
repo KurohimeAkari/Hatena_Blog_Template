@@ -238,15 +238,19 @@ a:focus {
 // entry要素 h2 ~ h5
 ------------------------------------------------------------*/
 
-.entry-content h3{
-	border-bottom: 2px solid #ccc !important;
-}
-
 .entry-content h2,.entry-content h3,
 .entry-content h4,.entry-content h5{
 	margin-top: 15px !important;
 	margin-bottom: 10px !important;
 	padding:0px !important;
+}
+
+.entry-content h3{
+	border-bottom: 2px solid #ccc !important;
+}
+
+.entry-content h4{
+	border-bottom: 1px dashed #666 !important;
 }
 
 h4:before{
