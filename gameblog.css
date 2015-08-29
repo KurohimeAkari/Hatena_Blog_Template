@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------
 // (C) Kurohime Akari
 // Website: http://shioneko.sakura.ne.jp
-// はてなブログ用 Blog Templates . Varsion 1.25
+// はてなブログ用 Blog Templates . Varsion 1.3
 //
-// Comments: 普通にブログを開設した時くらいのテンプレートを制作した。	
+// Comments: Youtubeの偏りがおかしかったのでセンター寄せにしてみる。	
 ------------------------------------------------------------*/
 
 
@@ -432,6 +432,13 @@ iframe {
 
 iframe[src*="youtube"] {
 	margin:10px -0px !important;
+}
+
+@media (max-width: 1000px){
+	iframe[src*="youtube"]{
+		display: inherit;
+		margin: 0px auto !important;
+	}
 }
 
 /* -----------------------------------------------------------
