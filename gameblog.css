@@ -435,7 +435,7 @@ iframe[src*="youtube"] {
 }
 
 @media (max-width: 1000px){
-	iframe[src*="youtube"]{
+	iframe[src*="youtube"],embed{
 		display: inherit;
 		margin: 0px auto !important;
 	}
