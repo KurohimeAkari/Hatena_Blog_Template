@@ -472,12 +472,17 @@ p > img {
 /* CSS3 */
 	p > img.magnifiable,p > img.hatena-fotolife{
 		display: inherit;
-		margin: 0px auto !important;
+		margin: 0px auto 10px !important;
 	}
 /* CSS4 */
 	?p > img.magnifiable,?p > img.hatena-fotolife{
 		text-align: center;
 	}
+
+	img ~ br{
+		margin: 0px;
+		display: block;
+	} 
 }
 
 
