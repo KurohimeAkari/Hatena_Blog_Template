@@ -452,6 +452,10 @@ iframe {
 	display: block;
 }
 
+iframe.miiverse-post-frame {
+margin:0px auto !important;
+}
+
 /*iframe[src*="youtube"] {
 	margin:10px -0px !important;
 }
