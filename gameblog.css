@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------
 // (C) Kurohime Akari
 // Website: http://shioneko.sakura.ne.jp
-// はてなブログ用 Blog Templates . Varsion 1.3.1
+// はてなブログ用 Blog Templates . Varsion 1.5
 //
-// Comments: li,ul あたりの修正	
+// Comments: div.box　で囲めるように付け加えた。
 ------------------------------------------------------------*/
 
 
@@ -235,7 +235,7 @@ a:focus {
 }
 
 .entry-content p{
-	margin:5px !important;
+	margin:5px;
 }
 /* -----------------------------------------------------------
 // entry要素 h2 ~ h5
@@ -317,7 +317,7 @@ time{
     background-color: #333;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1100px){
 	.entry-header-menu{
 		top:-40px;
 		left: -60px;
@@ -452,8 +452,17 @@ iframe {
 	display: block;
 }
 
+iframe + script + p {
+	margin-top: 15px !important;
+}
+
 iframe.miiverse-post-frame {
 margin:0px auto !important;
+}
+
+iframe.embed-card{
+	
+	max-width: none !important;
 }
 
 /*iframe[src*="youtube"] {
@@ -505,6 +514,15 @@ p > img {
 		margin: 0px;
 		display: block;
 	} 
+}
+
+/* -----------------------------------------------------------
+// box
+------------------------------------------------------------*/
+
+div.box{
+	border:1px solid #ccc;
+	padding: 3px 5px;
 }
 
 /* -----------------------------------------------------------
