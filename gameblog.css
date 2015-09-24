@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------
 // (C) Kurohime Akari
 // Website: http://shioneko.sakura.ne.jp
-// はてなブログ用 Blog Templates . Varsion 1.5
+// はてなブログ用 Blog Templates . Varsion 1.6
 //
-// Comments: div.box　で囲めるように付け加えた。
+// Comments: margin関係の小さな修正
 ------------------------------------------------------------*/
 
 
@@ -495,7 +495,7 @@ img.magnifiable,img.hatena-fotolife{
 
 p > img {
 	text-align: center;
-	margin: 3px 10px !important;
+	margin: 3px 9px !important;
 }
 
 /*レスポンシブ*/
@@ -525,6 +525,15 @@ div.box{
 	padding: 3px 5px;
 }
 
+div.box > p > span.box,div.box > span.box{
+	text-decoration: none !important;
+	font-weight: bold;
+	background: #777;
+	margin: 0px -6px !important;
+	color: #fff;
+	padding: 0px 15px;
+	display: inline-block;
+}
 /* -----------------------------------------------------------
 // table
 ------------------------------------------------------------*/
@@ -541,7 +550,7 @@ div.hatena-asin-detail-foot{
 }
 
 /* -----------------------------------------------------------
-// 
+//  ここから先は自分用
 ------------------------------------------------------------*/
 
 ul.hatena-urllist > li:nth-child(1n+8){
