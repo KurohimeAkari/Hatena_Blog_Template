@@ -235,7 +235,7 @@ a:focus {
 }
 
 .entry-content p{
-	margin:5px;
+	margin:5px 0px;
 }
 /* -----------------------------------------------------------
 // entry要素 h2 ~ h5
@@ -260,7 +260,7 @@ a:focus {
 	content: "　";
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0px 10px 3px 0px;
+	margin: 0px 15px 3px 2px;
 	background-color: #666;
 	width: 10px;
 	height: 10px;
@@ -495,7 +495,7 @@ img.magnifiable,img.hatena-fotolife{
 
 p > img {
 	text-align: center;
-	margin: 2px 4.2px !important;
+	margin: 3px 10px !important;
 }
 
 /*レスポンシブ*/
