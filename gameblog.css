@@ -238,6 +238,22 @@ a:focus {
 	margin:5px 0px;
 }
 /* -----------------------------------------------------------
+// 目次要素
+------------------------------------------------------------*/
+ul.table-of-contents:before{
+	content: "目次";
+	/*
+	background: #999;
+	color:#eee;*/
+	display: inline-block;
+	font-weight: bold;
+	border:1px solid #666;
+	border-radius: 3px;
+	margin-left:-17px;
+	margin-bottom: 12px;
+	padding:1px 47%;
+}
+/* -----------------------------------------------------------
 // entry要素 h2 ~ h5
 ------------------------------------------------------------*/
 
