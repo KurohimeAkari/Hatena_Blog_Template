@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------
 // (C) Kurohime Akari
 // Website: http://shioneko.sakura.ne.jp
-// はてなブログ用 Blog Templates . Varsion 1.7.5
+// はてなブログ用 Blog Templates . Varsion 2.0.0
 //
-// Comments: Twitter関連
+// Comments: h3関係の形とFont-familyを変更
 ------------------------------------------------------------*/
 
 
@@ -256,16 +256,20 @@ ul.table-of-contents:before{
 /* -----------------------------------------------------------
 // entry要素 h2 ~ h5
 ------------------------------------------------------------*/
-
-.entry-content h2,.entry-content h3,
-.entry-content h4,.entry-content h5{
+.entry-content h1,.entry-content h2,.entry-content h3,
+.entry-content h4,.entry-content h5,.entry-content h6{
 	margin-top: 15px !important;
 	margin-bottom: 10px !important;
 	padding:0px !important;
+	/* Mac は 丸ゴのみ　それ意外の機種は普通にBody書体へ*/
+	font-family: "ヒラギノ丸ゴ Pro W4",'游ゴシック','Yu Gothic','メイリオ','Meiryo';
 }
 
 .entry-content h3{
-	border-bottom: 2px solid #999 !important;
+	background: #999 none repeat scroll 0% 0%;
+	color: #F8F8F8;
+	font-size: 14px;
+	padding: 2px 10px !important;
 }
 
 .entry-content h4{
@@ -273,7 +277,7 @@ ul.table-of-contents:before{
 }
 
 .entry-content h3 + h4{
-	margin-top: -3px !important;
+	margin-top: 20px !important;
 }
 
 .entry-content h4:before{
