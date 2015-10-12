@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------
 // (C) Kurohime Akari
 // Website: http://shioneko.sakura.ne.jp
-// はてなブログ用 Blog Templates . Varsion 1.6
+// はてなブログ用 Blog Templates . Varsion 1.7.5
 //
-// Comments: margin関係の小さな修正
+// Comments: Twitter関連
 ------------------------------------------------------------*/
 
 
@@ -26,7 +26,7 @@ body {
 
 html {
     line-height: 1.6;
-    font-family: 'Source Sans Pro',"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     color: #666;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -265,11 +265,15 @@ ul.table-of-contents:before{
 }
 
 .entry-content h3{
-	border-bottom: 2px solid #ccc !important;
+	border-bottom: 2px solid #999 !important;
 }
 
 .entry-content h4{
 	border-bottom: 1px dashed #666 !important;
+}
+
+.entry-content h3 + h4{
+	margin-top: -3px !important;
 }
 
 .entry-content h4:before{
@@ -488,7 +492,7 @@ iframe.embed-card{
 @media (max-width: 1000px){*/
 	iframe[src*="youtube"],embed{
 		display: inherit;
-		margin: 0px auto !important;
+		margin: 20px auto !important;
 	}
 /*}*/
 
@@ -564,6 +568,15 @@ table {
 div.hatena-asin-detail-foot{
 	display: none;
 }
+
+/* -----------------------------------------------------------
+// Twitter
+------------------------------------------------------------*/
+
+iframe.twitter-tweet{
+	margin: 10px auto;
+}
+
 
 /* -----------------------------------------------------------
 //  ここから先は自分用
