@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------
 // (C) Kurohime Akari
 // Website: http://shioneko.sakura.ne.jp
-// はてなブログ用 Blog Templates . Varsion 2.0.0
+// はてなブログ用 Blog Templates . Varsion 2.4.0
 //
-// Comments: h3関係の形とFont-familyを変更
+// Comments: Comments の文字が大きかった問題を修正
 ------------------------------------------------------------*/
 
 
@@ -26,7 +26,7 @@ body {
 
 html {
     line-height: 1.6;
-    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     color: #666;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -262,7 +262,7 @@ ul.table-of-contents:before{
 	margin-bottom: 10px !important;
 	padding:0px !important;
 	/* Mac は 丸ゴのみ　それ意外の機種は普通にBody書体へ*/
-	font-family: "ヒラギノ丸ゴ Pro W4",'游ゴシック','Yu Gothic','メイリオ','Meiryo';
+	font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ角ゴ Pro W6","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'メイリオ','Meiryo';
 }
 
 .entry-content h3{
@@ -288,6 +288,10 @@ ul.table-of-contents:before{
 	background-color: #666;
 	width: 10px;
 	height: 10px;
+}
+
+.entry-content h5{
+	font-size:13px;
 }
 
 .entry-content h5:before{
@@ -426,6 +430,10 @@ ul.hatena-urllist,
     line-height: 30px;
 }
 
+.hatena-module-title{
+clear:both;
+}
+
 .hatena-module-body,
 .hatena-module-title {
     margin: 0 5px;
@@ -437,6 +445,14 @@ ul.hatena-urllist,
 
 .hatena-module-title a{
 	color: inherit;
+}
+/* module レスポンス*/
+@media (max-width: 1000px){
+	ul.archive-module-months li{
+		display: inline-block;
+		margin: 7px 10px;
+		width:118px;
+	}
 }
 
 /* -----------------------------------------------------------
@@ -469,7 +485,7 @@ ul.hatena-urllist,
 }
 
 .comment > .entry-comment > .comment-user-name > .hatena-id-icon{
-	vertical-align: -3px;
+	vertical-align: -5px;
 }
 
 iframe {
@@ -514,7 +530,9 @@ iframe.embed-card{
 
 img.magnifiable,img.hatena-fotolife{
 	max-width: 560px !important;
-	width: 100%;
+	max-height:500px !important;
+	display: inherit;
+	margin: 0px auto 10px !important;
 }
 
 p > img {
@@ -524,20 +542,36 @@ p > img {
 
 /*レスポンシブ*/
 @media (max-width: 1000px){
-/* CSS3 */
-	p > img.magnifiable,p > img.hatena-fotolife{
-		display: inherit;
-		margin: 0px auto 10px !important;
-	}
-/* CSS4 */
-	?p > img.magnifiable,?p > img.hatena-fotolife{
-		text-align: center;
-	}
-
 	img ~ br{
 		margin: 0px;
 		display: block;
 	} 
+}
+
+/* -----------------------------------------------------------
+// category form
+------------------------------------------------------------*/
+
+.entry-description{
+	font-size: 14px;
+	line-height: 28px;
+	color: inherit;
+	padding-top:3px;
+}
+
+.hatena-star-star-container{
+	display: inline-block;
+	width: 100%;
+	margin: 5px 0px;
+	text-align: left;
+}
+
+/* -----------------------------------------------------------
+// Comments
+------------------------------------------------------------*/
+
+.comment-content{
+	font-size:14px;
 }
 
 /* -----------------------------------------------------------
@@ -581,76 +615,4 @@ iframe.twitter-tweet{
 	margin: 10px auto;
 }
 
-
-/* -----------------------------------------------------------
-//  ここから先は自分用
-------------------------------------------------------------*/
-
-ul.hatena-urllist > li:nth-child(1n+8){
-	display: none;
-}
-
-ul.star{
-	list-style: none;
-	border:1px solid #ccc;
-}
-
-span.star{
-	width:170px;
-	margin-right: 25px;
-	font-weight: bold;
-	display: inline-block;
-	border-right:3px double #ccc ;
-}
-
-.rssd{
-	text-align: center;
-	padding:3px;
-	border-radius: 5px;
-	width: 80%;
-	margin:5px 10%; /* width / 2 */
-}
-
-.rssd:nth-child(1){
-	background-color: #E67928;
-}
-
-.rssd:nth-child(2){
-	background-color: #6cc655;
-}
-
-.rssd:nth-child(3){
-	background-color: #aaa;
-}
-
-.rssa{
-	display: inline-block;
-	text-decoration: none;
-	color:#fff !important;
-	width: 100%;
-	height:100%;
-
-}
-
-div#banner{
-    text-align:center;
-    margin-top:-20px;
-}
-
-@media (max-width: 1000px){
-	#banner{
-		position: absolute;
-		margin-top: -190px !important;
-		right: 20px;
-	}
-}
-
-/* gist */
-.line {
-    margin: 0px !important;
-}
-
-/*script*/
-script {
-    text-align:center;
-}
+/*ここまで*/
