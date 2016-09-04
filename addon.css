@@ -1,0 +1,182 @@
+/* -----------------------------------------------------------
+// Milliard ( 設置型 コンテンツ)
+------------------------------------------------------------*/
+
+footer .ssArticleContent{
+	font-size:14px;
+	padding: 7px 10px !important;
+	margin:0px !important;
+}
+
+footer .img .ssArticleContent{
+	padding: 0px !important;
+	margin: 1px !important;
+}
+
+footer .ssArticle:nth-child(1n+10){
+	display:none !important;
+}
+
+
+footer .ssArticleTitleContainer{
+	z-index: 10 !important;
+}
+.hatena-iframe-container{
+	z-index: 11 !important;
+}
+
+footer .ssArticlesFooterContainer{
+	float: none;
+}
+
+/* -----------------------------------------------------------
+//  ここから先は自分用
+------------------------------------------------------------*/
+
+.entry-footer .social-buttons {
+    margin: 10px auto;
+    display: inherit;
+    text-align: center;
+}
+
+span.social-buttons{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.social-buttons div.social_b{
+	display: inline-block;
+      width: 120px;
+      padding: 5px 2px;
+      text-align: center;
+      vertical-align:middle;
+      border:1px solid #666;
+      margin:3px;
+      cursor: pointer;
+      font-size:13px;
+      min-height: 60px;
+}
+
+.social-buttons p{
+	margin: 0px;
+	margin-top:8px;
+	font-size: 13px !important;
+}
+
+.social-buttons iframe{
+	display: inline-block;
+}
+
+.social-buttons div:hover{
+	background: #ddd;
+}
+
+.social-buttons div a {
+	font-size:18px;
+}
+
+i.fa{
+	margin:3px;
+}
+
+.hatena-star-star-container{
+	display: inline-block;
+	width: 100%;
+	margin: 5px 0px;
+	text-align: left;
+}
+
+/*
+ul.hatena-urllist > li:nth-child(1n+8){
+	display: none;
+}
+*/
+
+ul.star{
+	list-style: none;
+	border:1px solid #ccc;
+}
+
+span.star{
+	width:170px;
+	margin-right: 25px;
+	font-weight: bold;
+	display: inline-block;
+	border-right:3px double #ccc ;
+}
+
+.rssd{
+	text-align: center;
+	padding:3px;
+	border-radius: 5px;
+	width: 80%;
+	margin:5px 10%; /* width / 2 */
+}
+
+@media (max-width: 1000px){
+	.rssd{
+		display: inline-block;
+	    width: 20%;
+	    margin:0px !important;
+	}
+}
+
+.rssd:nth-child(1){
+	background-color: #E67928;
+}
+
+.rssd:nth-child(2){
+	background-color: #6cc655;
+}
+
+.rssd:nth-child(3){
+	background-color: #aaa;
+}
+
+.rssa{
+	display: inline-block;
+	text-decoration: none;
+	color:#fff !important;
+	width: 100%;
+	height:100%;
+
+}
+
+div#banner{
+    text-align:center;
+    margin-top:-20px;
+}
+
+@media (max-width: 1000px){
+	#banner{
+		position: absolute;
+		margin-top: -190px !important;
+		right: 20px;
+	}
+}
+
+/* gist */
+.line {
+    margin: 0px !important;
+}
+
+/*script*/
+script {
+    text-align:center;
+}
+
+/* -----------------------------------------------------------
+// Push
+------------------------------------------------------------*/
+.p7-b {
+	margin-top: -25px !important;
+}
+
+.p7-b>.p7-left{
+	margin-left: 4px !important;
+}
+
+.p7-b>a>span,.p7-b>.p7-left span {
+	font-size: 11px !important;
+}
