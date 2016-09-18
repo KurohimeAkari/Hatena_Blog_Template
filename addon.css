@@ -180,3 +180,27 @@ script {
 .p7-b>a>span,.p7-b>.p7-left span {
 	font-size: 11px !important;
 }
+
+/* -----------------------------------------------------------
+// ポップンランプ
+------------------------------------------------------------*/
+
+h4[title*="クリア"],[title*="銅"]{
+	color:#BD7862 !important;
+}
+
+h4[title*="フルコン"],[title*="銀"]{
+	color:#aaaaaa !important;
+}
+
+h4[title*="Easy"],[title*="easy"],[title*="易"]{
+	color:#00884B !important;
+}
+
+h4[title*="パーフェクト"]{
+	color:#CBBF32 !important;
+}
+
+h4[title*="黒"]{
+	color:#666 !important;
+
