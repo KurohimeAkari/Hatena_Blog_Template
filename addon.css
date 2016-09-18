@@ -200,5 +200,7 @@ h4[title*="Easy"],[title*="easy"],[title*="易"]{
 h4[title*="パーフェクト"]{
 	color:#CBBF32 !important;
 }
-}
+
+h4[title*="黒"]{
+	color:#666 !important;
 
