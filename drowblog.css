@@ -95,7 +95,7 @@ iframe.embed-card{
 
 embed,iframe{
 	display: inherit;
-	margin: 20px 0px !important;
+	margin: 20px auto !important;
 }
 
 .recent-comments span.user-id{
