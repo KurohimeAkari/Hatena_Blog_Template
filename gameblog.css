@@ -307,6 +307,37 @@ ul.table-of-contents:before{
 .entry-content h6{
 	font-size: 11px;
 }
+
+.entry blockquote{
+	padding: 0px !important;
+    padding-left:1em !important;
+    border: 0px !important;
+    border-left:4px solid #EC7878 !important;
+    -webkit-border-radius : 0px !important;
+    margin-bottom: 1.5rem !important;
+}
+
+/* -----------------------------------------------------------
+// markdown table
+------------------------------------------------------------*/
+
+table{
+	border-collapse:collapse !important;
+	border-spacing:0 !important;
+	margin-top: 0.8rem !important;
+	margin-bottom: 1.4rem !important;
+	width: 100% !important;
+}
+tr{
+	background-color: #fff !important;
+	border-top: 1px solid #ccc !important;
+}
+th,td{
+	padding: 5px 14px !important;
+	border: 1px solid #ddd !important;
+	max-width: 50px  !important;
+}
+
 /* -----------------------------------------------------------
 >> time
 ------------------------------------------------------------*/
